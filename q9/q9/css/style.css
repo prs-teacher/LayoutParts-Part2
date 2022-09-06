@@ -1,4 +1,180 @@
 @charset "UTF-8";
 
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.green {
+    background: #76ff826b;
+}
+
+.fadein {
+    animation: fadeIn 4s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.fadeout {
+    animation: fadeout 4s ease 4s 1 normal;
+}
+
+@keyframes fadeout {
+    100% {opacity: 0}
+    0% {opacity: 1}
+}
+
+.rotetion {
+    animation: rotetion 4s linear infinite;
+}
+
+@keyframes rotetion {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+.blue {
+    background: #331aefd0;
+}
+
+.colorchenge {
+    transition: 1s ease;
+}
+
+.colorchenge:hover {
+    background: #ff27e2c9;
+
+}
+
+.hoverrotetion {
+    transition: 0.5s;
+    transform: rotateZ(0deg);
+}
+
+.hoverrotetion:hover {
+    transition: 0.5s;
+    transform: rotateZ(360deg);
+}
+
+.trans-latetop {
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+
+.trans-latetop:hover {
+    transition: 0.5s;
+    transform: translate(0, -20%);
+}
+
+.trans-lateright {
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+
+.trans-lateright:hover {
+    transition: 0.5s;
+    transform: translate(20%, 0);
+}
+
+.trans-scaleY {
+    transition: 0.5s;
+    height: 200px;
+}
+
+.trans-scaleY:hover {
+    transition: 0.5s;
+    height: 300px;
+}
+
+.trans-scaleX {
+    transition: 0.5s;
+    width: 200px;
+}
+
+.trans-scaleX:hover {
+    transition: 0.5s;
+    width: 500px;
+}
+
+.boxsizing:hover {
+    transition: 0.5s;
+    box-sizing: border-box;
+    width: 200px;
+    border: solid 10px #00ffe5;
+}
+
+.shadow {
+    transition: 0.5s;
+    box-shadow: none;
+}
+.shadow:hover {
+    transition: 0.5s;
+    box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.loading {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    animation: spin 1.1s linear infinite;
+    border: 10px solid #ecf1f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid #14ff4bcd;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.cardlist {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-right: none;
+    transition: 0.5s;
+    background: #ffffff;
+}
+
+.card:last-child {
+    border-right: 1px solid #000000;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 3px #424242d0;
+    z-index: 1;
+}
+
+.card p {
+    margin-top: 20px;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: url(https://picsum.photos/id/1005/200/300) no-repeat center/cover;
+}
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
