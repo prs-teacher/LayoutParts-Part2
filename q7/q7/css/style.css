@@ -1,1 +1,33 @@
 @charset "UTF-8";
+
+.balloon-task {
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 16px;
+    background: #fad296;
+    border: solid 5px #8f5a0a;
+    border-radius: 25px;
+    position: relative;
+}
+
+.balloon-task:before {
+    content: "";
+    position: absolute;
+    border: 30px solid transparent;
+    border-top: 30px solid #8f5a0a;
+    top: 100%;
+    left: 50%;
+    margin-left: -220px;
+}
+
+.balloon-task:after {
+    content: "";
+    border: 30px solid transparent;
+    border-top: 30px solid #fad296;
+    position: absolute;
+    top: 95.5%;
+    left: 50%;
+    margin-left: -220px;
+}
