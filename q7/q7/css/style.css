@@ -1,1 +1,33 @@
 @charset "UTF-8";
+.card-box {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  width: 500px;
+  border: solid 5px #8f5a0a;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card-box::before {
+  content: "";
+  border: 10px solid transparent;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+}
+.card-box::after {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #fad296;
+  margin-left: -250px;
+  margin-top: -3px;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+}
+.card-box::before {
+  border-top: 10px solid #8f5a0a;
+  margin-left: -250px;
+  margin-top: 5px;
+}
