@@ -1,2 +1,21 @@
 @charset "UTF-8";
-
+.bg-repeat {
+  height: 500px;
+  background-image: url(../image/coffee-background.jpg); /*　デフォルトでは、リピートされる */
+}
+.bg-nonrepeat {
+  height: 500px;
+  background-image: url(../image/coffee-background.jpg);
+  background-repeat: no-repeat;
+}
+.bg-wide {
+  height: 500px;
+  background-image: url(../image/coffee-background.jpg);
+  background-size: 100%;
+}
+.bg-center {
+  height: 500px;
+  background-image: url(../image/coffee-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
